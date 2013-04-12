@@ -27,21 +27,17 @@
 
 	<header class="top_nav">
 		<section>
-			<a href="/"><img src="assets/images/logo.png" alt="GO HOME"
+			<a href="/elearning/index.html"><img src="assets/images/logo.png" alt="GO HOME"
 				id="logo" class="left" height="36" width="200"> </a> <input
-				id="top_q" name="q" class="search_box">
+				id="top_q" name="q" class="search_box"><button class="ui-icon ui-icon-search">查找...</button>
 			<nav id="main_nav_container" class="right">
 				<div>
 					<ul id="mini_nav">
 						<li><a
 							href="https://www.infragistics.com/membership/loginmodal?ReturnUrl=http%3a%2f%2fwww.infragistics.com%2f"
-							id="signInLink"> Sign in </a></li>
-						<li><a href="#http://store.infragistics.com/"> Store </a></li>
-						<li><a
-							href="#http://www.infragistics.com/my-account/keys-and-downloads/"
-							id="accountLink"> Account </a></li>
-						<li class="last"><a href="#http://www.infragistics.com/chat">
-								Chat </a></li>
+							id="signInLink"><span class="ui-icon ui-icon-person">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Sign in </a></li>
+						<li><a href="#http://store.infragistics.com/"><span class="ui-icon ui-icon-cart">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Store </a></li>
+						
 					</ul>
 				</div>
 
@@ -59,7 +55,7 @@
 				<div class="menu">
 
 					<ul>
-						<li>大綱</li>
+						<li><span class="ui-icon ui-icon-newwin">&nbsp;&nbsp;&nbsp;&nbsp;</span>大綱</li>
 						<li>稍後觀看</li>
 						<li>觀看記錄</li>
 						<li>訂閱項目</li>
@@ -67,7 +63,8 @@
 						<li>ZK開發</li>
 						<li>Tomcat服務器</li>
 						<li>Jboss服務器</li>
-
+						<li><a
+							href="data/schedule.html">進度表</a></li>
 					</ul>
 				</div>
 				<div class="content">
@@ -107,23 +104,23 @@
 				</div>
 				<div class="slider">
 					<ul id='lessons'>
-						<li><a
+						<li><span class="ui-icon ui-icon-video">&nbsp;&nbsp;&nbsp;&nbsp;</span><a
 							href="#http://172.18.60.38:8001/0401.mp4">Java基礎1</a></li>
-						<li><a
+						<li><span class="ui-icon ui-icon-video">&nbsp;&nbsp;&nbsp;&nbsp;</span><a
 							href="#http://172.18.60.38:8001/0403.flv">Java基礎2</a></li>
-						<li><a
+						<li><span class="ui-icon ui-icon-video">&nbsp;&nbsp;&nbsp;&nbsp;</span><a
 							href="#http://172.18.60.38:8001/0408.flv">Java基礎3</a></li>
-						<li><a
+						<li><span class="ui-icon ui-icon-video">&nbsp;&nbsp;&nbsp;&nbsp;</span><a
 							href="#http://172.18.60.38:8001/0410.flv">Java基礎2</a></li>
-						<li><a
+						<li><span class="ui-icon ui-icon-video">&nbsp;&nbsp;&nbsp;&nbsp;</span><a
 							href="#http://172.18.60.38:8001/0410.flv">Java基礎2</a></li>
-						<li><a
+						<li><span class="ui-icon ui-icon-video">&nbsp;&nbsp;&nbsp;&nbsp;</span><a
 							href="#http://172.18.60.38:8001/0410.flv">Java基礎2</a></li>
-						<li><a
+						<li><span class="ui-icon ui-icon-video">&nbsp;&nbsp;&nbsp;&nbsp;</span><a
 							href="#http://172.18.60.38:8001/0410.flv">Java基礎2</a></li>
-						<li><a
+						<li><span class="ui-icon ui-icon-video">&nbsp;&nbsp;&nbsp;&nbsp;</span><a
 							href="#http://172.18.60.38:8001/0410.flv">Java基礎2</a></li>
-						<li><a
+						<li><span class="ui-icon ui-icon-video">&nbsp;&nbsp;&nbsp;&nbsp;</span><a
 							href="#http://172.18.60.38:8001/ZK0326.mp4">ZK開發1</a></li>
 						
 					</ul>
@@ -180,7 +177,7 @@
 							<li><a target="_blank" rel="nofollow"
 								href="http://www.facebook.com/infragistics"><div
 										class="image-link"
-										style="background-image: url(/uploadedImages/Content/Footer/facebook.png);"></div>
+										style="background-image: url();"></div>
 									<span class="image-link-span">Join us on Facebook</span></a></li>
 					</ul>
 					</div>
@@ -206,11 +203,11 @@
 	</footer>
 
 	<script
-		src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		src="assets/js/jquery-1.9.1.js"></script>
 	<script>
 		window.jQuery
 				|| document
-						.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')
+						.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"><\/script>')
 	</script>
 	<script src="assets/js/plugins.js"></script>
 	<script src="assets/js/main.js"></script>
@@ -226,9 +223,9 @@
 			//alert($(this).find('a').attr('href').substr(1));
 			var url= $(this).find('a').attr('href').substr(1);
 			v = $('#media').player({
-				f : url,
-				width:640,
-				height:390
+				f : url
+				//width:640,
+				//height:390
 			});			
 		});
 

@@ -112,8 +112,8 @@
 		
 		/**/
 		// 下面一行是调用播放器了，括号里的参数含义：（播放器文件，要显示在的div容器，宽，高，需要flash的版本，当用户没有该版本的提示，加载初始化参数，加载设置参数如背景，加载attributes参数，主要用来设置播放器的id）
-		swfobject.embedSWF('assets/ckplayer/ckplayer.swf', 'a1', options.width, options.height,
-				'10.0.0', 'assets/ckplayer/expressInstall.swf', flashvars,
+		swfobject.embedSWF(options.path+'ckplayer.swf', 'a1', options.width, options.height,
+				'10.0.0', options.path+'expressInstall.swf', flashvars,
 				params, attributes); // 播放器地址，容器id，宽，高，需要flash插件的版本，flashvars,params,attributes
 		// 调用ckplayer的flash播放器结束
 		
@@ -186,6 +186,7 @@
 		w : '',// 指定调用自己配置的文本文件,不指定将默认调用和播放器同名的txt文件
 		// 调用播放器的所有参数列表结束
 		// 以下为自定义的播放器参数用来在插件里引用的
+		path:'assets/ckplayer/',//ckplayer相对路径
 		my_url : 'ckhtm',// 本页面地址
 		//以下为jquery.player配置的option项，与ckplayer不兼容
 		width:640,//播放器宽度
