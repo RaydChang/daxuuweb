@@ -383,6 +383,22 @@ body {
   width: 180px;
 }
 
+#left_menu ul {
+  margin: 2px;
+  padding: 2px;
+
+}
+#left_menu li {
+  list-style-type: none;
+  margin-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+
+#left_menu li a.over{
+	background-color: #000000;
+	
+}
 .content {
   border-left: 1px solid #C4C4C4;
   float: left;
@@ -397,6 +413,17 @@ body {
   /*width: 100px;*/
 }
 
+#right_menu ul {
+  margin: 2px;
+  padding: 2px;
+
+}
+#right_menu li {
+  list-style-type: none;
+  margin-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
 
 
 body > footer, body .igweb footer {
@@ -459,6 +486,46 @@ a {
   font-size: 0.875em;
   outline: 0 none;
   text-decoration: none;
+}
+
+#search {
+	color: #333333;
+ 	border-bottom-left-radius: 0;
+    border-left: 0 none;
+    border-top-left-radius: 0;
+	background-color: #F8F8F8;
+    background-image: linear-gradient(to bottom, #FCFCFC 0px, #F8F8F8 100%);
+    border-color: #D3D3D3;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    height: 29px;
+    outline: 0 none;
+    padding: 0 0.9em;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: normal;
+    width:60px;
+}
+
+#top_q {
+	-moz-box-sizing: border-box;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-color: #D3D3D3;
+    border-radius: 2px 2px 2px 2px;
+    border-width: 1px;
+    font-size: 12px;
+    height: 29px;
+    line-height: 30px;
+    margin: 0 0 0 0px;
+    padding: 0 0.9em;
+    overflow: hidden;
+  	width: 460px;
 }
 /* ==========================================================================
    Helper classes
